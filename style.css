@@ -60,11 +60,8 @@ a{
   position: absolute;
   background: #333
     url("./images/bg.jpg");
-  background-attachment: fixed;
-  background-position-x: center;
-  background-position-y: 100%;
-  /* background-position: center;
-  background-attachment: scroll; */
+  background-position: center;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -162,6 +159,12 @@ a{
     .grid {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #showcase .bg-image {
+        background-attachment: fixed;
+        background-position-x: center;
+        background-position-y: 100%;
     }
 
     #section-a .content-text {
