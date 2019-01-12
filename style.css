@@ -1,10 +1,19 @@
+/* css variables */
+
+:root {
+    --light: #fff;
+    --dark: #333;
+    --gray: #666;
+    --blue: #2690d4;
+}
+
 /* core styles */
 
 body {
   margin: 0;
   font-family: Tahoma, Geneva, sans-serif;
-  background: #333;
-  color: #fff;
+  background: var(--dark);
+  color: var(--light);
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
@@ -29,36 +38,36 @@ p {
 }
 
 a{
-    color: #2690d4;
+    color: var(--blue);
     text-decoration: none;
 }
 
 .btn {
   display: inline-block;
-  background: #333;
-  color: #fff;
+  background: var(--dark);
+  color: var(--light);
   text-decoration: none;
   padding: 0.5em 1em;
-  border: 1px solid #666;
+  border: 1px solid var(--gray);
   border-radius: 0.25em;
   margin: 0.5em 0;
 }
 
 .btn:hover {
-  background: #2690d4;
+  background: var(--blue);
 }
 
 /* header area */
 
 #showcase {
   min-height: 450px;
-  color: #fff;
+  color: var(--light);
   text-align: center;
 }
 
 #showcase .bg-image {
   position: absolute;
-  background: #333
+  background: var(--dark)
     url("./images/bg.jpg");
   background-position: center;
   background-attachment: scroll;
@@ -95,8 +104,8 @@ a{
 /* section a */
 
 #section-a {
-    background: #eaeaea;
-    color: #333;
+    background: var(--light);
+    color: var(--dark);
     padding-bottom: 2em;
 }
 
@@ -114,8 +123,8 @@ a{
 
 #section-b li {
     margin-bottom: 1em;
-    background: #fff;
-    color: #333;
+    background: var(--light);
+    color: var(--dark);
 }
 
 .card-content {
@@ -126,23 +135,23 @@ a{
 
 #section-c {
     padding: 0.25em 2em;
-    background: #fff;
-    color: #333;
+    background: var(--light);
+    color: var(--dark);
 }
 
 /* section d */
 
 #section-d .box {
     padding: 0.25em 2em;
-    color: #fff;
+    color: var(--light);
 }
 
 #section-d .box:first-child { /* note only has 1 child in this case*/
-    background: #2690d4;
+    background: var(--blue);
 }
 
 #section-d a {
-    color: #333;
+    color: var(--dark);
     text-decoration: none;
 }
 
@@ -150,8 +159,8 @@ a{
 
 #main-footer {
     padding: 1em;
-    background: #333;
-    color: #fff;
+    background: var(--dark);
+    color: var(--light);
     text-align: center;
 }
 
